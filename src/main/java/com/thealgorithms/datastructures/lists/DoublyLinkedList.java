@@ -18,7 +18,7 @@ public final class DoublyLinkedList {
     /**
      * Head refers to the front of the list
      */
-    protected Link head;
+    private Link head;
     /**
      * Tail refers to the back of the list
      */
