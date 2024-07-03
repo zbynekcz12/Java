@@ -23,7 +23,7 @@ public abstract class TreeNode<E> extends Node<E> {
     /**
      * Empty contructor.
      */
-    public TreeNode() {
+    protected TreeNode() {
         super();
         depth = 0;
     }
@@ -34,7 +34,7 @@ public abstract class TreeNode<E> extends Node<E> {
      * @param data Value to which data will be initialized.
      * @see Node#Node(Object)
      */
-    public TreeNode(E data) {
+    protected TreeNode(E data) {
         super(data);
         depth = 0;
     }
@@ -45,7 +45,7 @@ public abstract class TreeNode<E> extends Node<E> {
      * @param data Value to which data will be initialized.
      * @param parentNode Value to which the nodes' parent reference will be set.
      */
-    public TreeNode(E data, TreeNode<E> parentNode) {
+    protected TreeNode(E data, TreeNode<E> parentNode) {
         super(data);
         this.parentNode = parentNode;
         depth = this.parentNode.getDepth() + 1;

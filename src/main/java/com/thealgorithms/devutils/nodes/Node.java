@@ -20,7 +20,7 @@ public abstract class Node<E> {
     /**
      * Empty constructor.
      */
-    public Node() {
+    protected Node() {
     }
 
     /**
@@ -28,7 +28,7 @@ public abstract class Node<E> {
      *
      * @param data Value to which data will be initialized.
      */
-    public Node(E data) {
+    protected Node(E data) {
         this.data = data;
     }
 
