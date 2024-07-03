@@ -12,7 +12,7 @@ public abstract class MedianOfRunningArray<T extends Number & Comparable<T>> {
     private PriorityQueue<T> minHeap;
 
     // Constructor
-    public MedianOfRunningArray() {
+    protected MedianOfRunningArray() {
         this.maxHeap = new PriorityQueue<>(Collections.reverseOrder()); // Max Heap
         this.minHeap = new PriorityQueue<>(); // Min Heap
     }
